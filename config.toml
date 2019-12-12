@@ -1,0 +1,17 @@
+[setting]
+port = 39001
+
+[log]
+log_name = "service"
+log_level = "dev"
+log_folder = "/tmp/service"
+
+[consul]
+consul_addr = "localhost:8500"
+
+[hytrix]
+hytrix_timeout = 5000
+hytrix_max_concurrent = 20000
+hytrix_volumn_threshold = 100
+hytrix_sleep_window = 5000
+hytrix_error_percent_threshold = 80

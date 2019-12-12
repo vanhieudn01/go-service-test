@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package dto.data;
+
+//option declaration
+option go_package = "github.com/vanhieudn01/service-test/grpc-gen/dto";
+
+message HelloReq {
+	string msg = 1;
+}
+
+message Error {
+	int32 code = 1;
+	string message = 2;
+	string domain = 3;
+}
+
+message HelloResp {
+	Error err = 1;
+	string epoch = 2;
+}

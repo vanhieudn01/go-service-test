@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package service;
+
+import "idl/dto/dto.proto";
+
+service example {
+    rpc HelloWorld(dto.data.HelloReq) returns (dto.data.HelloResp);
+}
